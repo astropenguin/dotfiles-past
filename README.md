@@ -23,3 +23,11 @@ $ git clone https://github.com/snoopython/dotfiles && cd dotfiles && ./install
     - latest miniconda3
     - Python 2.7 (as an environment of miniconda3)
     - Python 3.5 (as an environment of miniconda3)
+
+## Attention
+
+### Before installation
+
+1. clean install macOS
+2. rename computer name (e.g. Snoopy)
+3. install Sophos Home
