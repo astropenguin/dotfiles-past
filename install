@@ -1,0 +1,16 @@
+#!/bin/bash
+
+# base directory where this script is located
+DIR_DOTFILES="$(cd "$(dirname "${BASH_SOURCE[0]}" )" && pwd)"
+
+# information of installation
+DATETIME=`date '+%Y-%m-%d'`
+COMPUTER=`scutil --get ComputerName`
+
+# execute install.sh
+if [ ! -d ${DIR_DOTFILES}/log ]; then
+    mkdir ${DIR_DOTFILES}/log
+fi
+
+LOG_FILENAME="${COMPUTER}_${DATETIME}.log"
+${DIR_DOTFILES}/install.sh 2>&1 | tee ${DIR_DOTFILES}/log/${LOG_FILENAME}
