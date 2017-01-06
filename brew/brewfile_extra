@@ -1,0 +1,39 @@
+# install formulae
+brew 'ffmpeg'
+brew 'hugo'
+brew 'pandoc'
+brew 'tree'
+brew 'wget'
+
+# install casks
+cask 'adobe-air'
+cask 'adobe-reader'
+cask 'appcleaner'
+cask 'fliqlo'
+cask 'flux'
+cask 'inkscape'
+cask 'istat-menus'
+cask 'near-lock'
+cask 'nosleep'
+cask 'mactex'
+cask 'mendeley-desktop'
+cask 'qlcolorcode'
+cask 'qlimagesize'
+cask 'qlmarkdown'
+cask 'qlstephen'
+cask 'saoimage-ds9'
+cask 'shortcuts'
+cask 'silverlight'
+cask 'skim'
+cask 'stellarium'
+cask 'vlc'
+
+# install apps
+mas 'Deckset', id: 847496013
+mas 'LINE', id: 539883307
+mas 'Marked 2', id: 890031187
+mas 'ScanSnap Cloud', id: 1035516352
+mas 'SoraAnnai', id: 599799247
+mas 'traumbaum',id: 1151308717
+mas 'Window Tidy', id: 456609775
+
