@@ -3,24 +3,12 @@
 set -eu
 trap log_error ERR
 
+# base directory
+DIR_DOTFILES=${1}
+
 # log functions
 LOG_NAME="[dotfiles.python]"
-log_info () { echo -e "\033[33m${LOG_NAME}\033[m $1"; }
-log_error () { echo -e "\033[31m${LOG_NAME}\033[m interruped by error"; }
-log_prompt () {
-    while true; do
-        echo -ne "\033[33m${LOG_NAME}\033[m ${1} [y/n] "
-        read answer
-        case ${answer} in
-            [yY]* ) echo "y" && return 0;;
-            ""    ) continue;;
-            *     ) echo "n" && return 1;;
-        esac
-    done
-}
-
-# base directory where this script is located
-DIR_PYTHON="$(cd "$(dirname "${BASH_SOURCE[0]}" )" && pwd)"
+source ${DIR_DOTFILES}/installer/func.sh ${LOG_NAME}
 
 # install Python emvironments
 log_info "installing Python environments"
