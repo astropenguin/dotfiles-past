@@ -11,22 +11,25 @@ DIR_DOTFILES=${1}
 LOG_NAME="[dotfiles.macos]"
 source ${DIR_DOTFILES}/installer/func.sh ${LOG_NAME}
 
+# remove localization files
 log_info "removing localization files"
-rm -f ~/Applications/.localized
-rm -f ~/Desktop/.localized
-rm -f ~/Documents/.localized
-rm -f ~/Downloads/.localized
-rm -f ~/Movies/.localized
-rm -f ~/Music/.localized
-rm -f ~/Pictures/.localized
-rm -f ~/Public/.localized
-
 log_info "hide unused directories in home"
 chflags hidden ~/Applications
 chflags hidden ~/Movies
 chflags hidden ~/Music
 chflags hidden ~/Pictures
 chflags hidden ~/Public
+for d in ~/[A-Z]*; do
+    if [ -f ${d}/.localized ]; then
+        log_info "--> removing ${d}/.localized"
+        rm ${d}/.localized
+    else
+        log_info "--> ${d}/.localized already removed"
+    fi
+done
+
+log_info "--> successfully removed"
+
 
 # successfully finished
 log_info "successfully finished"
