@@ -1,4 +1,5 @@
 #!/bin/bash
+# macos/install.sh
 
 set -eu
 trap log_error ERR
