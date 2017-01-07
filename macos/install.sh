@@ -13,12 +13,7 @@ source ${DIR_DOTFILES}/installer/func.sh ${LOG_NAME}
 
 # remove localization files
 log_info "removing localization files"
-log_info "hide unused directories in home"
-chflags hidden ~/Applications
-chflags hidden ~/Movies
-chflags hidden ~/Music
-chflags hidden ~/Pictures
-chflags hidden ~/Public
+
 for d in ~/[A-Z]*; do
     if [ -f ${d}/.localized ]; then
         log_info "--> removing ${d}/.localized"
@@ -30,6 +25,15 @@ done
 
 log_info "--> successfully removed"
 
+# hide unused directories in home
+log_info "hiding unused directories in home"
+
+for d in "Applications" "Movies" "Music" "Pictures" "Public"; do
+    log_info "--> hiding ${HOME}/${d}"
+    chflags hidden ~/${d}
+done
+
+log_info "--> successfully hidden"
 
 # successfully finished
 log_info "successfully finished"
