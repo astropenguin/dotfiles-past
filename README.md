@@ -29,5 +29,6 @@ $ git clone https://github.com/snoopython/dotfiles && cd dotfiles && ./install
 ### Before installation
 
 1. clean install macOS
-2. rename computer name (e.g. Snoopy)
-3. install Sophos Home
+1. install Sophos Home
+1. rename computer name (e.g. Snoopy)
+1. sign in to the Mac App Store
