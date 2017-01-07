@@ -8,9 +8,5 @@ DATETIME=`date '+%Y-%m-%d'`
 COMPUTER=`scutil --get ComputerName`
 
 # execute install.sh
-if [ ! -d ${DIR_DOTFILES}/log ]; then
-    mkdir ${DIR_DOTFILES}/log
-fi
-
 LOG_FILENAME="${COMPUTER}_${DATETIME}.log"
-${DIR_DOTFILES}/install.sh 2>&1 | tee ${DIR_DOTFILES}/log/${LOG_FILENAME}
+${DIR_DOTFILES}/installer/install.sh ${DIR_DOTFILES} 2>&1 | tee ${LOG_FILENAME}

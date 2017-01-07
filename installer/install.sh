@@ -1,15 +1,16 @@
 #!/bin/bash
+# install.sh
 
 set -eu
 trap log_error ERR
+export PYTHONUNBUFFERED=1
+
+# base directory
+DIR_DOTFILES=${1}
 
 # log functions
 LOG_NAME="[dotfiles]"
-log_info () { echo -e "\033[33m${LOG_NAME}\033[m $1"; }
-log_error () { echo -e "\033[31m${LOG_NAME}\033[m interruped by error"; }
-
-# base directory where this script is located
-DIR_DOTFILES="$(cd "$(dirname "${BASH_SOURCE[0]}" )" && pwd)"
+source ${DIR_DOTFILES}/installer/func.sh ${LOG_NAME}
 
 # URL of homebrew
 URL_HOMEBREW=https://raw.githubusercontent.com/Homebrew/install/master/install
@@ -61,9 +62,10 @@ log_info "--> successfully executed"
 
 # install tools and apps
 log_info "installing tools and apps"
-${DIR_DOTFILES}/brew/install.sh
-${DIR_DOTFILES}/macos/install.sh
-${DIR_DOTFILES}/python/install.sh
+${DIR_DOTFILES}/brew/install.sh ${DIR_DOTFILES}
+${DIR_DOTFILES}/latex/install.sh ${DIR_DOTFILES}
+${DIR_DOTFILES}/macos/install.sh ${DIR_DOTFILES}
+${DIR_DOTFILES}/python/install.sh ${DIR_DOTFILES}
 
 # successfully finished
 log_info "successfully finished"
