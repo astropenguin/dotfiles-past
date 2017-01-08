@@ -3,7 +3,6 @@
 
 set -eu
 trap log_error ERR
-export PYTHONUNBUFFERED=1
 
 # base directory
 DIR_DOTFILES=${1}
@@ -30,9 +29,9 @@ fi
 log_info "installing tools and apps"
 ${DIR_DOTFILES}/homebrew/install.sh ${DIR_DOTFILES}
 ${DIR_DOTFILES}/mackup/install.sh ${DIR_DOTFILES}
+${DIR_DOTFILES}/python/install.sh ${DIR_DOTFILES}
 ${DIR_DOTFILES}/latex/install.sh ${DIR_DOTFILES}
 ${DIR_DOTFILES}/macos/install.sh ${DIR_DOTFILES}
-${DIR_DOTFILES}/python/install.sh ${DIR_DOTFILES}
 
 # successfully finished
 log_info "successfully finished"
