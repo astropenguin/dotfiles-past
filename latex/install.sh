@@ -12,7 +12,7 @@ LOG_NAME="[dotfiles.latex]"
 source ${DIR_DOTFILES}/installer/func.sh ${LOG_NAME}
 
 # update TeX Live package manager
-log_info "update TeX Live package manager"
+log_info "updating TeX Live package manager"
 
 sudo tlmgr update --self --all
 log_info "--> successfully updated"
