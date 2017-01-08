@@ -19,7 +19,7 @@ for d in ~/[A-Z]*; do
         log_info "--> removing ${d}/.localized"
         rm ${d}/.localized
     else
-        log_info "--> ${d}/.localized already removed"
+        log_info "--> ${d}/.localized is already removed"
     fi
 done
 
