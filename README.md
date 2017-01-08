@@ -8,7 +8,7 @@ $ ~/Local/Repositories
 $ git clone https://github.com/snoopython/dotfiles && cd dotfiles && ./install
 ```
 
-## Instllations
+## List of installed items
 
 + Homebrew + Homebrew Bundle
     - formulae (Vim, tmux, pyenv, etc)
