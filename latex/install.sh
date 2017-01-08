@@ -11,6 +11,17 @@ DIR_DOTFILES=${1}
 LOG_NAME="[dotfiles.latex]"
 source ${DIR_DOTFILES}/installer/func.sh ${LOG_NAME}
 
+# check installation
+log_info "checking installation"
+
+if ! type tlmgr >/dev/null 2>&1; then
+    log_info "--> TeX Live is not installed"
+    log_info "finished with no installation"
+    exit 0
+else
+    log_info "--> OK"
+fi
+
 # update TeX Live package manager
 log_info "updating TeX Live package manager"
 
