@@ -1,7 +1,7 @@
 " .vimrc
 
 " edit
-"set modifiable
+set modifiable
 set fenc=utf-8
 set autoread
 set nobackup
