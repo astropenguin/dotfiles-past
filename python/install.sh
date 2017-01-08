@@ -11,12 +11,21 @@ DIR_DOTFILES=${1}
 LOG_NAME="[dotfiles.python]"
 source ${DIR_DOTFILES}/installer/func.sh ${LOG_NAME}
 
-# install Python emvironments
-log_info "installing Python environments"
+# check installation
+log_info "checking installation"
+
+if ! type pyenv >/dev/null 2>&1; then
+    log_info "--> pyenv is not installed"
+    log_info "finished with no installation"
+    exit 0
+else
+    log_info "--> OK"
+fi
+
+# install conda from miniconda3
+log_info "installing conda from miniconda3"
 
 eval "$(pyenv init -)"
-
-log_info "installing conda from miniconda3"
 
 if ! pyenv versions | grep miniconda3-latest >/dev/null 2>&1; then
     pyenv install miniconda3-latest
