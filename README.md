@@ -18,11 +18,12 @@ $ git clone https://github.com/snoopython/dotfiles && cd dotfiles && ./install
     - ipython profiles (`ipython_config.py`, `startup`, etc)
     - tmux config (`.tmux.conf`)
     - vim config (`.vimrc`)
-+ pyenv
++ Python
     - latest miniconda3 (as an installation of conda)
-+ conda
     - Python 2.7 (as an environment of miniconda3)
     - Python 3.5 (as an environment of miniconda3)
++ LaTeX
+    - Hiragino fonts setup
 
 ## Attention
 
