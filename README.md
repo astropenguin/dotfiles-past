@@ -4,7 +4,6 @@
 ## Installation
 
 ```bash
-$ ~/Local/Repositories
 $ git clone https://github.com/snoopython/dotfiles && cd dotfiles && ./install
 ```
 
