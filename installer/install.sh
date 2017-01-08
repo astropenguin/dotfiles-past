@@ -28,7 +28,7 @@ fi
 
 # install tools and apps
 log_info "installing tools and apps"
-${DIR_DOTFILES}/brew/install.sh ${DIR_DOTFILES}
+${DIR_DOTFILES}/homebrew/install.sh ${DIR_DOTFILES}
 ${DIR_DOTFILES}/mackup/install.sh ${DIR_DOTFILES}
 ${DIR_DOTFILES}/latex/install.sh ${DIR_DOTFILES}
 ${DIR_DOTFILES}/macos/install.sh ${DIR_DOTFILES}
