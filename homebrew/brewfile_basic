@@ -4,7 +4,7 @@ tap 'snoopython/formulae'
 # install formulae
 brew 'coreutils'
 brew 'enhancd'
-brew 'flipper'
+brew 'finder-cli'
 brew 'gcc'
 brew 'git'
 brew 'mackup'
