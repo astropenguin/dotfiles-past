@@ -35,9 +35,8 @@ export ENHANCD_DISABLE_HOME=1
 export ENHANCD_DOT_ARG="../"
 export ENHANCD_FILTER=fzf
 
-# flipper
-source /usr/local/etc/flipper/flipper.sh
-alias f=fcd
+# finder-cli
+source /usr/local/etc/finder-cli/init.sh
 
 # rmsafe
 alias rm="rmsafe"
