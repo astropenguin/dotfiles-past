@@ -30,7 +30,7 @@ export PS1="${cY}${character} ${cB}[${cE}\!${cB}]${cE}:\W $ "
 # --------
 
 # enhancd
-source /usr/local/etc/enhancd.d/init.sh
+source /usr/local/etc/enhancd/init.sh
 export ENHANCD_DISABLE_HOME=1
 export ENHANCD_DOT_ARG="../"
 export ENHANCD_FILTER=fzf
