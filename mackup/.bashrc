@@ -6,6 +6,7 @@
 # -------
 alias ls="ls -FG"
 alias ll="ls -FGalsh"
+alias lf="ls | fzf"
 alias reload="source ~/.bash_profile"
 
 
