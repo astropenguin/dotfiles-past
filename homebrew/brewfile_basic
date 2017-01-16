@@ -17,7 +17,7 @@ brew 'vim'
 # install casks
 cask 'cmd-eikana'
 cask 'dropbox'
-cask 'flash-player'
+cask 'flash-npapi'
 cask 'github-desktop'
 cask 'google-japanese-ime'
 cask 'iterm2'
