@@ -11,6 +11,12 @@ DIR_DOTFILES=${1}
 LOG_NAME="[dotfiles.macos]"
 source ${DIR_DOTFILES}/installer/func.sh ${LOG_NAME}
 
+# check execution
+if ! log_prompt "execute installation?"; then
+    log_info "--> installation skipped"
+    exit 0
+fi
+
 # remove localization files
 log_info "removing localization files"
 

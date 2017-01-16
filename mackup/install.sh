@@ -12,6 +12,12 @@ DIR_DOTFILES=${1}
 LOG_NAME="[dotfiles.mackup]"
 source ${DIR_DOTFILES}/installer/func.sh ${LOG_NAME}
 
+# check execution
+if ! log_prompt "execute installation?"; then
+    log_info "--> installation skipped"
+    exit 0
+fi
+
 # check installation
 log_info "checking installation"
 
