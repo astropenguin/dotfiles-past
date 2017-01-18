@@ -54,7 +54,7 @@ nnoremap Y y$
 nnoremap + <C-a>
 nnoremap - <C-x>
 nnoremap <ESC><ESC> :nohlsearch<CR>
-inoremap <silent> jj <esc>
+inoremap <silent> jj <ESC>
 
 " plugins
 if empty(glob('~/.vim/autoload/plug.vim'))
