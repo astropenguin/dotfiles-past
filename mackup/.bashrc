@@ -49,3 +49,10 @@ alias rm="rmsafe"
 # Anaconda
 alias conda-activate="source ~/.pyenv/versions/miniconda3-latest/bin/activate"
 alias conda-deactivate="source ~/.pyenv/versions/miniconda3-latest/bin/deactivate"
+
+
+# Tools
+# -----
+
+# am
+export AM_CACHE_PATH=~/.am
