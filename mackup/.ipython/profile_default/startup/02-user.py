@@ -1,7 +1,7 @@
 # coding: utf-8
 
 sep = os.path.sep
-projects = '/Users/Akio/Local/Work/Repositories'
+projects = '/Users/Akio/Local/Repositories'
 
 for dirpath, dirnames, filenames in os.walk(projects):
     level = dirpath[len(projects)+len(sep):].count(sep)
