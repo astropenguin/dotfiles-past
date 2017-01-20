@@ -1,4 +1,5 @@
 # install formulae
+brew 'am'
 brew 'ffmpeg'
 brew 'hugo'
 brew 'pandoc'
