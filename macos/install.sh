@@ -34,7 +34,7 @@ log_info "--> successfully removed"
 # hide unused directories in home
 log_info "hiding unused directories in home"
 
-for d in "Movies" "Music" "Pictures" "Public"; do
+for d in "Documents" "Movies" "Music" "Pictures" "Public"; do
     if [ -d ~/${d} ]; then
         log_info "--> hiding ${HOME}/${d}"
         chflags hidden ~/${d}
