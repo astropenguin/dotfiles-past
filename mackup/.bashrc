@@ -56,3 +56,15 @@ alias conda-deactivate="source ~/.pyenv/versions/miniconda3-latest/bin/deactivat
 
 # am
 export AM_CACHE_PATH=~/.am
+
+
+# tmux
+# ----
+if [[ -z "${TMUX}" ]]; then
+    if ! tmux has >/dev/null 2>&1; then
+        tmux new
+    else
+        target=`tmux ls | fzf --select-1 | cut -d: -f1`
+        tmux attach -t ${target}
+    fi
+fi
