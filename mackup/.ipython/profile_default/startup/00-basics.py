@@ -18,5 +18,6 @@ from astropy.io import fits
 from astropy import units as u
 from scipy import signal
 from scipy import fftpack
+from scipy import ndimage
 from scipy import optimize
 from scipy import interpolate
