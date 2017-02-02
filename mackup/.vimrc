@@ -10,6 +10,7 @@ set hidden
 set virtualedit=onemore
 set clipboard+=unnamed
 set backspace=indent,eol,start
+set helplang=ja,en
 
 " indent
 set expandtab
@@ -73,7 +74,10 @@ Plug 'itchyny/lightline.vim'
 Plug 'joshdick/onedark.vim'
 Plug 'kana/vim-smartinput'
 Plug 'scrooloose/nerdtree'
+Plug 'terryma/vim-multiple-cursors'
+Plug 'tpope/vim-repeat'
 Plug 'tpope/vim-surround'
+Plug 'vim-jp/vimdoc-ja'
 Plug 'vim-scripts/vim-auto-save'
 Plug 'Yggdroot/indentLine'
 Plug 'yonchu/accelerated-smooth-scroll'
