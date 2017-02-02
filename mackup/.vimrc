@@ -42,19 +42,21 @@ set hlsearch
 set wrapscan
 
 " key mapping
-noremap  <up>    <nop>
-noremap  <left>  <nop>
-noremap  <right> <nop>
-noremap  <down>  <nop>
-noremap! <up>    <nop>
-noremap! <left>  <nop>
-noremap! <right> <nop>
-noremap! <down>  <nop>
+nmap <C-j> <C-d>
+nmap <C-k> <C-u>
+nmap <S-j> <C-f>
+nmap <S-k> <C-b>
+nnoremap <C-h> ^
+nnoremap <C-l> $
 nnoremap Y y$
 nnoremap + <C-a>
 nnoremap - <C-x>
 nnoremap <ESC><ESC> :nohlsearch<CR>
 inoremap <silent> jj <ESC>
+nnoremap <silent> o :<C-u>call append(line("."), repeat([""], v:count1))
+  \ \| silent! call repeat#set("o", v:count1)<CR>j
+nnoremap <silent> O :<C-u>call append(line(".")-1, repeat([""], v:count1))
+  \ \| silent! call repeat#set("O", v:count1)<CR>k
 
 " plugins
 if empty(glob('~/.vim/autoload/plug.vim'))
