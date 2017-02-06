@@ -19,7 +19,7 @@ def in_notebook():
 
 
 if in_notebook():
-    from bokeh.io import output_file, output_notebook
-    from bokeh.mpl import to_bokeh
-    from bokeh.plotting import figure, show, save
-    from bokeh.resources import CDN, INLINE
+    from bokeh.io import output_file, output_notebook, push_notebook
+    from bokeh.layouts import column, gridplot, row
+    from bokeh.plotting import figure, save
+
