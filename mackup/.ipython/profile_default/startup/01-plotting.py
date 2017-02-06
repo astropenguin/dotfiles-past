@@ -23,3 +23,16 @@ if in_notebook():
     from bokeh.layouts import column, gridplot, row
     from bokeh.plotting import figure, save
 
+    def show(obj=None, **kwargs):
+        from bokeh.plotting import show
+        from bokeh.io import output_notebook
+        from bokeh.mpl import to_bokeh
+        
+        if obj is None:
+            obj = to_bokeh()
+
+        if type(obj) == plt.Figure:
+            obj = to_bokeh(obj)
+
+        output_notebook(hide_banner=True)
+        show(obj, **kwargs)
