@@ -88,14 +88,11 @@ call plug#end()
 " color scheme
 syntax enable
 
-if has("termguicolors")
+try
   set termguicolors
-endif
-
-if isdirectory(expand("~/.vim/plugged/onedark.vim"))
   colorscheme onedark
   let g:lightline = {'colorscheme': 'onedark'}
-endif
+endtry
 
 " vim-auto-save
 let g:auto_save = 1
