@@ -45,14 +45,16 @@ set wrapscan
 " key mapping
 nmap <C-j> <C-d>
 nmap <C-k> <C-u>
-nmap <S-j> <C-f>
-nmap <S-k> <C-b>
 nnoremap <C-h> ^
 nnoremap <C-l> $
+nnoremap j gj
+nnoremap k gk
+nnoremap gj j
+nnoremap gk k
 nnoremap Y y$
 nnoremap + <C-a>
 nnoremap - <C-x>
-nnoremap <ESC><ESC> :nohlsearch<CR>
+nnoremap <silent> <ESC><ESC> :nohlsearch<CR>
 inoremap <silent> jj <ESC>
 nnoremap <silent> o :<C-u>call append(line("."), repeat([""], v:count1))
   \ \| silent! call repeat#set("o", v:count1)<CR>j
