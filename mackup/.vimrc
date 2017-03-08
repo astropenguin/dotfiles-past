@@ -26,7 +26,6 @@ set list
 set wrap
 set textwidth=0
 set cursorline
-set colorcolumn=80
 set visualbell
 set showmatch
 set matchtime=1
@@ -34,6 +33,8 @@ set laststatus=2
 set scrolloff=5
 set listchars=eol:¬,tab:▸\
 set pumheight=10
+set colorcolumn=80
+let &colorcolumn=join(range(81,999),",")
 
 " search
 set ignorecase
