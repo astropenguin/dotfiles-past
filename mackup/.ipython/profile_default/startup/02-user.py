@@ -9,7 +9,7 @@ for dirpath, dirnames, filenames in os.walk(projects):
         sys.path.append(dirpath)
 
 
-from fmflow import fm
+import fmflow as fm
 
 
 def default(func):
