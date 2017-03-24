@@ -9,5 +9,9 @@
     showInvisibles: true
   "exception-reporting":
     userId: "edbfe91f-3ff3-45e5-8244-aeaec2ce8968"
+  "vim-mode-plus":
+    smoothScrollOnFullScrollMotion: true
+    smoothScrollOnHalfScrollMotion: true
+    useClipboardAsDefaultRegister: true
   welcome:
     showOnStartup: false
