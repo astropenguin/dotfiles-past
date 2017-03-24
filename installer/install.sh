@@ -32,6 +32,7 @@ ${DIR_DOTFILES}/mackup/install.sh ${DIR_DOTFILES}
 ${DIR_DOTFILES}/python/install.sh ${DIR_DOTFILES}
 ${DIR_DOTFILES}/latex/install.sh ${DIR_DOTFILES}
 ${DIR_DOTFILES}/macos/install.sh ${DIR_DOTFILES}
+${DIR_DOTFILES}/atom/install.sh ${DIR_DOTFILES}
 
 # successfully finished
 log_info "successfully finished"
