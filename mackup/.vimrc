@@ -25,7 +25,6 @@ set number
 set list
 set wrap
 set textwidth=0
-set cursorline
 set visualbell
 set showmatch
 set matchtime=1
@@ -43,7 +42,7 @@ set incsearch
 set hlsearch
 set wrapscan
 
-" key mapping
+" keymap
 nmap <C-j> <C-d>
 nmap <C-k> <C-u>
 nnoremap <C-h> ^
@@ -56,28 +55,23 @@ nnoremap Y y$
 nnoremap + <C-a>
 nnoremap - <C-x>
 nnoremap <silent> <ESC><ESC> :nohlsearch<CR>
-inoremap <silent> jj <ESC>
 nnoremap <silent> o :<C-u>call append(line("."), repeat([""], v:count1))
-  \ \| silent! call repeat#set("o", v:count1)<CR>j
+  \ \| silent! call repeat#set("o", v:count1)<CR>
 nnoremap <silent> O :<C-u>call append(line(".")-1, repeat([""], v:count1))
-  \ \| silent! call repeat#set("O", v:count1)<CR>k
+  \ \| silent! call repeat#set("O", v:count1)<CR>
+inoremap <silent> jj <ESC>
 
 " plugins
 if empty(glob('~/.vim/autoload/plug.vim'))
-  echo "installing vim-plug\n"
   silent !curl -fLo ~/.vim/autoload/plug.vim --create-dirs
     \ https://raw.githubusercontent.com/junegunn/vim-plug/master/plug.vim
-  echo "successfully installed\n"
   autocmd VimEnter * PlugInstall --sync | source $MYVIMRC
 endif
 
 call plug#begin('~/.vim/plugged')
-Plug 'davidhalter/jedi-vim'
 Plug 'itchyny/lightline.vim'
 Plug 'joshdick/onedark.vim'
 Plug 'kana/vim-smartinput'
-Plug 'scrooloose/nerdtree'
-Plug 'terryma/vim-multiple-cursors'
 Plug 'tpope/vim-repeat'
 Plug 'tpope/vim-surround'
 Plug 'vim-jp/vimdoc-ja'
