@@ -11,6 +11,7 @@ plt.set_cmap('viridis')
 plt.rcParams['figure.figsize'] = (12,6)
 
 from matplotlib import colors
+from matplotlib import gridspec
 
 def in_notebook():
     try:

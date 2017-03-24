@@ -7,6 +7,7 @@ import sys
 import glob
 import json
 import time
+import yaml
 from collections import OrderedDict
 from datetime import datetime, timedelta
 from functools import partial, wraps
@@ -14,7 +15,8 @@ from inspect import getargspec, stack
 
 # dependent packages
 import numpy as np
-from numpy import ma
+import numpy.ma as ma
+import xarray as xr
 from scipy import signal
 from scipy import fftpack
 from scipy import ndimage
