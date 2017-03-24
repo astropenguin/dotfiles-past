@@ -15,6 +15,7 @@ brew 'tmux'
 brew 'vim'
 
 # install casks
+cask 'atom'
 cask 'cmd-eikana'
 cask 'dropbox'
 cask 'flash-npapi'
