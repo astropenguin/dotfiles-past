@@ -1,0 +1,4 @@
+file-icons@2.1.1
+minimap@4.26.8
+vim-mode-plus@0.84.1
+
