@@ -63,7 +63,7 @@ else
 
 fi
 
-pyenv global miniconda3-latest/envs/python2-default
+pyenv global miniconda3-latest/envs/python3-default
 
 # successfully finished
 log_info "successfully finished"
