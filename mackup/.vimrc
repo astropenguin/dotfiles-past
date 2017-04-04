@@ -45,8 +45,12 @@ set wrapscan
 " keymap
 nmap <C-j> <C-d>
 nmap <C-k> <C-u>
-nnoremap <C-h> ^
-nnoremap <C-l> $
+nmap <S-j> <C-f>
+nmap <S-k> <C-b>
+nnoremap <C-h> b
+nnoremap <C-l> w
+nnoremap <S-h> ^
+nnoremap <S-l> $
 nnoremap j gj
 nnoremap k gk
 nnoremap gj j
