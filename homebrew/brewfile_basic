@@ -1,5 +1,6 @@
 # tap repositories
 tap 'snoopython/formulae'
+tap 'caskroom/homebrew-fonts'
 
 # install formulae
 brew 'coreutils'
@@ -20,6 +21,7 @@ cask 'cmd-eikana'
 cask 'dropbox'
 cask 'duet'
 cask 'flash-npapi'
+cask 'font-fontawesome'
 cask 'github-desktop'
 cask 'google-japanese-ime'
 cask 'iterm2'
@@ -33,4 +35,3 @@ mas 'Numbers', id: 409203825
 mas 'Pages', id: 409201541
 mas 'Quiver', id: 866773894
 mas 'LastPass', id: 926036361
-
