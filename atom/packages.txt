@@ -2,5 +2,6 @@ autocomplete-python@1.8.62
 file-icons@2.1.1
 language-latex@1.0.0
 minimap@4.26.8
+platformio-ide-terminal@2.5.1
 vim-mode-plus@0.84.1
 
