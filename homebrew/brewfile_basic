@@ -17,7 +17,6 @@ brew 'vim'
 
 # install casks
 cask 'atom'
-cask 'cmd-eikana'
 cask 'dropbox'
 cask 'duet'
 cask 'flash-npapi'
@@ -26,6 +25,7 @@ cask 'github-desktop'
 cask 'google-japanese-ime'
 cask 'iterm2'
 cask 'java'
+cask 'karabiner-elements'
 cask 'skype'
 cask 'xquartz'
 
