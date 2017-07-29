@@ -1,13 +1,8 @@
 # coding: utf-8
 
 
-import matplotlib as mpl
-mpl.use('TkAgg')
-
 import matplotlib.pyplot as plt
-import seaborn as sns
-sns.set_palette('Set2', 8)
-plt.set_cmap('viridis')
+plt.style.use('seaborn-darkgrid')
 plt.rcParams['figure.figsize'] = (12,6)
 
 from matplotlib import colors
